@@ -28,21 +28,12 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1
+      - name: Deploy via rsync
+        uses: burnett01/rsync-deployments@7.0.1
         with:
-          host: barradatijucapsi.com.br
-          username: ubuntu
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            mkdir -p /var/www/prod/barradatijucapsi/barradatijucapsi
-
-      - name: Copy files to server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: barradatijucapsi.com.br
-          username: ubuntu
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "dist/public/*"
-          target: "/var/www/prod/barradatijucapsi/barradatijucapsi"
-          strip_components: 2
+          switches: -avz --delete --exclude='images/'
+          path: dist/public/
+          remote_path: /var/www/prod/barradatijucapsi/dist/public/
+          remote_host: barradatijucapsi.com.br
+          remote_user: ubuntu
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
