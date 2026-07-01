@@ -18,7 +18,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
-            src="/manus-storage/logo-psi_0131d5a6.jpg"
+            src="/images/logo.jpg"
             alt="Logo Maria da Conceição"
             className="w-10 h-10 rounded-lg"
           />

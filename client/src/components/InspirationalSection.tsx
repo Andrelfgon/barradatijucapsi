@@ -6,7 +6,7 @@ export default function InspirationalSection() {
           {/* Image */}
           <div className="animate-fade-in order-2 md:order-1">
             <img
-              src="/manus-storage/frase-motivacional_76f1d36d.jpg"
+              src="/images/frase.jpg"
               alt="Velhos caminhos não abrem portas novas"
               className="w-full rounded-lg shadow-lg"
             />

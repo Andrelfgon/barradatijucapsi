@@ -51,7 +51,7 @@ export default function HeroSection() {
           {/* Right Image */}
           <div className="animate-fade-in">
             <img
-              src="/manus-storage/maria-consultorio_67b1264e.png"
+              src="/images/hero.jpg"
               alt="Maria da Conceição em seu consultório - Psicóloga"
               className="w-full rounded-lg shadow-lg object-cover h-96"
             />

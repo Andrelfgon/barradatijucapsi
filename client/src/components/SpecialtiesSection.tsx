@@ -13,7 +13,7 @@ export default function SpecialtiesSection() {
           {/* TCC */}
           <div className="bg-white p-10 rounded-lg shadow-sm hover:shadow-lg transition-shadow animate-slide-up">
             <img
-              src="/manus-storage/tcc-heart-brain_cb392751.png"
+              src="/images/tcc.jpg"
               alt="Terapia Cognitiva Comportamental - Coração e Cérebro"
               className="w-full rounded-lg mb-6 h-64 object-contain bg-gray-50"
             />
@@ -31,7 +31,7 @@ export default function SpecialtiesSection() {
           {/* Psicoterapia Breve Focal */}
           <div className="bg-white p-10 rounded-lg shadow-sm hover:shadow-lg transition-shadow animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <img
-              src="/manus-storage/psicoterapia-breve-focal_ec7aa2f5.jpg"
+              src="/images/breve-focal.jpg"
               alt="Psicoterapia Breve Focal"
               className="w-full rounded-lg mb-6 h-64 object-contain bg-gray-100"
             />

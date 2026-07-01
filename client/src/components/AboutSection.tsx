@@ -6,7 +6,7 @@ export default function AboutSection() {
           {/* Image */}
           <div className="animate-fade-in">
             <img
-              src="/manus-storage/pasted_file_mkeyGM_WhatsAppImage2026-05-05at19.07.06_7beb0c6a.jpeg"
+              src="/images/sobre.jpg"
               alt="Maria da Conceição - Psicóloga"
               className="w-full rounded-lg shadow-lg object-cover h-96"
             />
